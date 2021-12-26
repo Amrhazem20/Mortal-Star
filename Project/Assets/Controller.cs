@@ -15,7 +15,7 @@ public class Controller : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
-    private bool grounded;
+    public bool grounded;
     private Animator anim;
     public KeyCode Return;
     public Transform firepoint;
