@@ -19,7 +19,7 @@ public class Spikes : MonoBehaviour {
         if (other.tag == "Player")
         {
             //if the collider of the object whose name is Sonic GameObjects touches the checkpoint's circle collider 
-            FindObjectOfType<LevelManger>().RespawnPlayer();
+            FindObjectOfType<LevelManager>().RespawnPlayer();
         }
 
 

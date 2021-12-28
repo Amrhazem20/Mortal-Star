@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Enemy Level 1.unity
     guid: 5c1fee0b8bb939e419be7740cfe6a3ff
+  - enabled: 1
+    path: Assets/Scenes/First Scene.unity
+    guid: b12adabb98e7ffd4498f2366ddedde8e
   m_configObjects: {}

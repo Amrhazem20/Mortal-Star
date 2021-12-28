@@ -64,6 +64,14 @@ public class Controller : MonoBehaviour
         anim.SetFloat("Y-axis", GetComponent<Rigidbody2D>().velocity.y);
         anim.SetFloat("speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
         anim.SetBool("grounded", grounded);
+
+        if (!PauseResume.paused)
+        {
+            if (Input.GetKeyDown(Spacebar) && grounded)
+            {
+                Jump();
+            }
+        }
     }
     void flip()
     {
