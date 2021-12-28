@@ -83,7 +83,8 @@ public class Controller : MonoBehaviour
 
         foreach(Collider2D Enemy in HitEnemy)
         {
-            Debug.Log("We hit" + Enemy.name);
+          
+            Debug.Log("We Hit" + Enemy.name);
         }
 
     }
