@@ -282,7 +282,7 @@ MonoBehaviour:
   AttackRange: 0.71
   EnemyLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
 --- !u!95 &55270861
 Animator:
   serializedVersion: 3
