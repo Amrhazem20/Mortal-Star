@@ -4088,11 +4088,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1079036736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 234af588c3380d048a3bcfeb7b916a25, type: 3}
+  m_Script: {fileID: 11500000, guid: 493cb42cbb4541b429d7b7af6eea7d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentCheckpoint: {fileID: 193349170}
-  Player: {fileID: 55270865}
 --- !u!1 &1135130587
 GameObject:
   m_ObjectHideFlags: 0
