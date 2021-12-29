@@ -229,7 +229,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70586007}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -757,6 +757,8 @@ MonoBehaviour:
   EnemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  AttackRate: 2
+  AttackDamage: 5
 --- !u!95 &737049698
 Animator:
   serializedVersion: 3
@@ -904,44 +906,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 6
   lives: 3
-  flickerTime: 0
   flickerDuration: 0.1
   isImmune: 0
-  immunityduration: 1.5
-  immunityTime: 0
-  coinsCollected: 0
-  scoreUI: {fileID: 0}
-  healthUI: {fileID: 135953630}
-  gradient:
-    serializedVersion: 2
-    key0: {r: 0.9716981, g: 0.021793222, b: 0.030634806, a: 1}
-    key1: {r: 0.99215686, g: 0.9467215, b: 0.058823552, a: 1}
-    key2: {r: 0.2689325, g: 0.990566, b: 0.05959621, a: 1}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 18479
-    ctime1: 43889
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 65535
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 1
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  fill: {fileID: 22094282}
+  immunityDuration: 1.5
 --- !u!1 &779470545
 GameObject:
   m_ObjectHideFlags: 0

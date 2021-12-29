@@ -23,6 +23,7 @@ public class Controller : MonoBehaviour
     public LayerMask EnemyLayer;
     public float AttackRate = 2f;
     float NextAttackTime = 0f;
+    public int AttackDamage = 5;
     // Use this for initialization
 
     void Start()
@@ -97,8 +98,10 @@ public class Controller : MonoBehaviour
 
         foreach(Collider2D Enemy in HitEnemy)
         {
-            Enemy.GetComponent<Dummy>().Dummyani();
-            Debug.Log("We Hit" + Enemy.name);
+            Enemy.GetComponent<Enemy>().TakeDamage(AttackDamage);
+            
+
+
         }
 
     }
