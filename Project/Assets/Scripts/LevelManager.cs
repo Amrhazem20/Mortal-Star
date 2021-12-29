@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public GameObject CurrentCheckpoint;
-
+    public Transform Player;
     // Use this for initialization
     void Start()
     {
@@ -21,4 +21,5 @@ public class LevelManager : MonoBehaviour
     {
         FindObjectOfType<Controller>().transform.position = CurrentCheckpoint.transform.position;
     }
+
 }
