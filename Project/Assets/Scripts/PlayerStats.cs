@@ -68,6 +68,22 @@ public class PlayerStats : MonoBehaviour {
 		}
 		PlayHitReaction();
 	}
+
+    public void SpikesDeath()
+    {
+
+                this.lives--;
+        LivesUI.text = lives.ToString();
+
+        if (this.lives == 0 )
+            {
+                Debug.Log("Gameover");
+                Destroy(this.gameObject);
+            }
+            Debug.Log("Player Lives:" + this.lives.ToString());
+    }
+    
+
 	void PlayHitReaction()
     {
 		this.isImmune = true;
