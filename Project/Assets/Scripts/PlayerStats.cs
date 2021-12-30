@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour {
-	public int health = 6;
+	public int health = 20;
 	public int lives = 3;
 	private float flickerTime = 0f;
 	public float flickerDuration = 0.1f;
@@ -12,11 +12,21 @@ public class PlayerStats : MonoBehaviour {
 	public bool isImmune = false;
 	private float immunityTime = 0f;
 	public float immunityDuration = 1.5f;
-	// Use this for initialization
-	void Start () {
+    public int soulsCollected;
+    public Text ScoreUI;
+    public Slider HealthUI;
+    // Use this for initialization
+    void Start () {
         
 		spriteRenderer = this.gameObject.GetComponent<SpriteRenderer>();
 	}
+
+    public void CollectSouls(int val)
+    {
+
+        soulsCollected += val;
+    }
+
 	void SpriteFlicker()
     {
 		if(this.flickerTime < this.flickerDuration)
@@ -63,7 +73,8 @@ public class PlayerStats : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
-
+        HealthUI.value = health;
+        ScoreUI.text = "" + soulsCollected;
         if (this.isImmune == true)
         {
 			SpriteFlicker();
