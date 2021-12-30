@@ -3310,9 +3310,9 @@ MonoBehaviour:
   isImmune: 0
   immunityDuration: 1.5
   soulsCollected: 0
-  ScoreUI: {fileID: 0}
-  LivesUI: {fileID: 0}
-  HealthUI: {fileID: 0}
+  ScoreUI: {fileID: 1425473942}
+  LivesUI: {fileID: 1201680440}
+  HealthUI: {fileID: 1010623320}
 --- !u!114 &1633769272
 MonoBehaviour:
   m_ObjectHideFlags: 0

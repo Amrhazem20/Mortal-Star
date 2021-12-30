@@ -74,6 +74,7 @@ public class PlayerStats : MonoBehaviour {
 
                 this.lives--;
         LivesUI.text = lives.ToString();
+        this.health = 20;
 
         if (this.lives == 0 )
             {
