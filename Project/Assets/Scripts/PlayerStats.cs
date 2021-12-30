@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour {
 	public float immunityDuration = 1.5f;
     public int soulsCollected;
     public Text ScoreUI;
+    public Text LivesUI;
     public Slider HealthUI;
     // Use this for initialization
     void Start () {
@@ -54,7 +55,8 @@ public class PlayerStats : MonoBehaviour {
 					FindObjectOfType<LevelManager>().RespawnPlayer();
 					this.health = 20;
 					this.lives--;
-				}
+                    LivesUI.text = lives.ToString();
+                }
 				else if (this.lives == 0 && this.health == 0)
 				{
 					Debug.Log("Gameover");
