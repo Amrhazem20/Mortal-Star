@@ -26,6 +26,10 @@ public class PlayerStats : MonoBehaviour {
     {
 
         soulsCollected += val;
+        if (soulsCollected >= 10)
+        {
+            (new NavigationScript()).GoToVictoryScene();
+        }
     }
 
 	void SpriteFlicker()
@@ -59,6 +63,7 @@ public class PlayerStats : MonoBehaviour {
                 }
 				else if (this.lives == 0 && this.health == 0)
 				{
+                    (new NavigationScript()).GoToGameOverScene();
 					Debug.Log("Gameover");
 					Destroy(this.gameObject);
 				}
@@ -78,7 +83,10 @@ public class PlayerStats : MonoBehaviour {
 
         if (this.lives == 0 )
             {
-                Debug.Log("Gameover");
+
+            (new NavigationScript()).GoToGameOverScene();
+     
+            Debug.Log("Gameover");
                 Destroy(this.gameObject);
             }
             Debug.Log("Player Lives:" + this.lives.ToString());
