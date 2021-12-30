@@ -12,6 +12,45 @@ EditorBuildSettings:
     path: Assets/Scenes/CutScene 1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/NextScene (1).unity
+    guid: e0bd253650ac02647bbb0f2b6ed01671
+  - enabled: 1
+    path: Assets/Scenes/Enemy Level 1.unity
+    guid: 5c1fee0b8bb939e419be7740cfe6a3ff
+  - enabled: 1
+    path: Assets/Scenes/NextScene.unity
+    guid: 712cc12867de3c94d985f61382e4476f
+  - enabled: 1
+    path: Assets/Scenes/Enemy Level 2.unity
+    guid: 1d1759626b1cc494bb1f849b8873eb8f
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene.unity
+    guid: 03018070f5217044d9e784c681636d8f
+  - enabled: 1
+    path: Assets/Scenes/Boss1cutScene.unity
+    guid: e7d447de16981c647aaf6090d73f305c
+  - enabled: 1
+    path: Assets/Scenes/Boss Level 1.unity
+    guid: 3fc7ad28382f96f48b5e6639830ab874
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene - (1).unity
+    guid: d096e665983aec4498b6993f96c06014
+  - enabled: 1
+    path: Assets/Scenes/First Scene.unity
+    guid: b12adabb98e7ffd4498f2366ddedde8e
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene - (2).unity
+    guid: 3c0a982a260071d4586fed4b2da202a4
+  - enabled: 1
+    path: Assets/Scenes/Boss2cutScene.unity
+    guid: 5566d13e65f3e424cb6815cb4cc98f4e
+  - enabled: 1
+    path: Assets/Scenes/BossLevel2.unity
+    guid: 5d1a578fb53da394da59f38fa52fa49b
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene - (3).unity
+    guid: 3fa57708b8997b64ea8dc98a9c856d5f
+  - enabled: 0
     path: Assets/Scenes/GameOver.unity
     guid: 5bbf583e644636944ba9bd1deabd5929
   m_configObjects: {}

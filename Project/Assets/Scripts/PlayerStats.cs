@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerStats : MonoBehaviour {
 	public int health = 20;
@@ -26,10 +28,7 @@ public class PlayerStats : MonoBehaviour {
     {
 
         soulsCollected += val;
-        if (soulsCollected >= 10)
-        {
-            (new NavigationScript()).GoToVictoryScene();
-        }
+
     }
 
 	void SpriteFlicker()
