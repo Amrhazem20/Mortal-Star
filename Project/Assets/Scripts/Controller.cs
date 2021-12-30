@@ -99,7 +99,8 @@ public class Controller : MonoBehaviour
         foreach(Collider2D Enemy in HitEnemy)
         {
             Enemy.GetComponent<Enemy>().TakeDamage(AttackDamage);
-            
+            Enemy.GetComponent<BossScript>().TakeDamage(AttackDamage);
+
 
 
         }

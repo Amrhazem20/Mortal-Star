@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour
-{
 
-    public Animator ani;
-    public int MaxHealth = 20;
+public class BossScript : MonoBehaviour
+{
+    public int MaxHealth = 100;
     public int CurrHealth;
-    public Slider EnemyUI;
+    public Slider BossUI;
 
     // Start is called before the first frame update
     public void Start()
@@ -22,8 +21,6 @@ public class Enemy : MonoBehaviour
     {
         CurrHealth -= damage;
 
-        ani.SetTrigger("Hurt");
-
         if (CurrHealth <= 0)
         {
             Die();
@@ -35,14 +32,15 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
 
-        ani.SetBool("IsDead", true);
-        Debug.Log("Enemy Died");
+        Debug.Log("Boss Died");
         Destroy(this.gameObject);
 
     }
 
-     void Update()
+    // Update is called once per frame
+    void Update()
     {
-        EnemyUI.value = MaxHealth;
+        BossUI.value = MaxHealth;
+
     }
 }
